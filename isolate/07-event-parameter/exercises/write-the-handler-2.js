@@ -7,7 +7,9 @@ console.log('initial header:', headerEl.cloneNode(true));
 
 const changeHeaderTextHandler = (event) => {
   // take input from a user and set it as the target's innerHTML
-
+ const userInput = prompt('enter a new header');
+ const target = event.target;
+ target.innerHTML = userInput;
 
 };
 

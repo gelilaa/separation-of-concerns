@@ -14,6 +14,35 @@ divEl.innerHTML = `
 console.log(divEl.nodeName + ' (before)', divEl.cloneNode(true));
 
 // --- write some code ---
+/* const letters = ['a', 'b', 'c', 'd'];
+for (let i = 0; i < 2; i++) {
+  for (let j = 0; j < 2; j++) {
+    const tbodyEL = divEl.children[0].children[0];
+    const trEl = tbodyEL.children[i];
+    const tdEl = document.createElement('td');
+    trEl.appendChild(tdEl);
+    tdEl.innerHTML= letters.shift();
+  }
+}
+*/
+
+const td1 = document.createElement('td');
+divEl.children[0].children[0].children[0].appendChild(td1);
+divEl.children[0].children[0].children[0].children[0].innerHTML = 'a';
+
+const td2 = document.createElement('td');
+divEl.children[0].children[0].children[0].appendChild(td2);
+divEl.children[0].children[0].children[0].children[1].innerHTML = 'b';
+
+const td3 = document.createElement('td');
+divEl.children[0].children[0].children[1].appendChild(td3);
+divEl.children[0].children[0].children[1].children[0].innerHTML = 'c';
+
+const td4 = document.createElement('td');
+divEl.children[0].children[0].children[1].appendChild(td4);
+divEl.children[0].children[0].children[1].children[1].innerHTML = 'd';
+
+
 
 
 
